@@ -2,6 +2,10 @@ import os
 from groq import Groq
 import json
 import sys
+from dotenv import load_dotenv
+
+# 加载.env文件
+load_dotenv()
 
 # 添加database目录到Python路径
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../database'))
