@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.api.query import router as query_router
 
 # 创建FastAPI应用实例
 app = FastAPI(
@@ -16,6 +17,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# 包含API路由
+app.include_router(query_router, prefix="/api", tags=["query"])
 
 # 基础健康检查接口
 @app.get("/")
