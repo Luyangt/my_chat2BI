@@ -126,9 +126,9 @@ def main():
     print(f"查询测试成功: {success_count}/{len(test_questions)}")
     
     if success_count == len(test_questions):
-        print("🎉 所有测试通过！JSON API运行正常")
+        print("[SUCCESS] 所有测试通过！JSON API运行正常")
     else:
-        print("⚠️  部分测试失败，请检查API服务")
+        print("[WARNING] 部分测试失败，请检查API服务")
 
 if __name__ == "__main__":
     main() 

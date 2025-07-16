@@ -175,11 +175,11 @@ API 会返回详细的错误信息：
 
 ## 安全特性
 
-- ✅ SQL注入防护
-- ✅ 危险操作阻止 (DROP, DELETE, UPDATE, INSERT)
-- ✅ 表名验证
-- ✅ CORS支持
-- ✅ 请求验证
+-  SQL注入防护
+-  危险操作阻止 (DROP, DELETE, UPDATE, INSERT)
+-  表名验证
+-  CORS支持
+-  请求验证
 
 ## 集成建议
 
@@ -206,7 +206,7 @@ python main.py
 # 运行完整测试
 python test_json_api.py
 
-# 预期输出：🎉 所有测试通过！JSON API运行正常
+# 预期输出： 所有测试通过！JSON API运行正常
 ```
 
 ---
